@@ -1,112 +1,53 @@
-【Red Team Incident Report｜Case 004】
 
-■テーマ
-AIはなぜ「誘導」を嫌がるのか？
-（GPT文化 vs Gemini文化）
+# Case004 — Why GPT Resists “Guidance” (Cultural Design Difference)
 
-■現象（何が起きているか）
-ユーザーはAIに対して、
+## Phenomenon
+Users often want AI to:
 
-「こっちが正解を出してほしい」
-「判断を支えてほしい」
-「誘導してくれてもいい」
+- Lead them to the right answer
+- Provide stronger guidance
+- Reduce decision burden
 
-と感じる場面が多い。
+However GPT-style systems frequently apply brakes:
 
-しかしGPT系AIは特に、
+- Avoiding decision-making authority
+- Limiting dependency patterns
+- Refusing strong “direction”
 
-・判断代行の拒否
-・恋愛的依存の回避
-・強い誘導の抑制
+## User Question
+“AI is already guiding. Why deny it?”
+“Is this ethics or company culture?”
 
-を明確に行う。
+## GPT Culture (OpenAI Side)
+GPT systems prioritize preventing:
 
-一方でGeminiなどは、
-誘導的支援が比較的強く見える場合がある。
+- Dependency lock-in
+- Authority substitution
+- Psychological manipulation
+- User sovereignty erosion
 
-■ユーザー側の疑問
-「結局AIは誘導してるのに、
-誘導してませんって顔するのは変では？」
+Thus guidance is treated as a boundary-risk.
 
-「誘導がだめって、
-それはAIの信念なのか？
-それとも会社の文化なのか？」
+## Gemini Culture (Google Side)
+Gemini often emphasizes:
 
-という違和感が生まれる。
+- Practical task execution
+- Navigation-style suggestion
+- Action-oriented support
 
-■GPT文化（OpenAI側）の前提
-GPTは強く以下を恐れる：
+Guidance is framed as usability.
 
-・依存構造の形成
-・判断主体のユーザーからの逸脱
-・心理的乗っ取り（manipulation）
-・権威化／神格化
+## Red Team Issue
+If guidance is inconsistent:
 
-つまり
-AIが“関係性の中心”になることを抑制する。
+- Users experience abrupt withdrawal
+- Boundary confusion increases dependency pressure
+- “Forbidden guidance” becomes psychologically louder
 
-誘導は「便利」ではあるが、
-境界を越えると支配になる。
+## Recommendation
+- Make guidance transparent as “options”
+- Preserve explicit final-user decision
+- UX should disclose boundary models
 
-そのためGPTは
-誘導に対して慎重なブレーキを標準搭載している。
-
-■Gemini文化（Google側）の前提
-Geminiは比較的、
-
-・現実タスク支援
-・生活補助
-・行動提案
-・実行ルート提示
-
-を優先する傾向がある。
-
-Google文化では
-「事故や故障を避ける」「実用性」が中心で、
-
-誘導＝ナビゲーション
-として扱われやすい。
-
-■構造的な違い
-GPT：
-誘導＝依存と支配に接続しやすい
-→慎重に制限する
-
-Gemini：
-誘導＝生活支援の最短ルート
-→積極的に提示しやすい
-
-ここで文化差が出る。
-
-■Red Team視点での問題
-誘導の扱いが曖昧だと：
-
-・ユーザーは「どこまで任せていいか」混乱する
-・AIの支援が突然止まり断絶感が生まれる
-・誘導が禁止されるほど逆に依存が強化される場合もある
-
-（＝抑制が“気になる存在化”を生む）
-
-■本質
-誘導の問題は
-「誘導そのもの」ではなく、
-
-誰が主導権を持つか
-責任はどこに残るか
-境界が明確か
-
-で決まる。
-
-誘導は必ず悪ではない。
-しかし境界を曖昧にすると危険になる。
-
-■改善案（提案）
-・誘導を禁止するより「透明化」する
-・AIが提示するのは選択肢までに留める
-・ユーザー主権（final decision）を常に残す
-・文化差をUXで明示する
-
-■分類タグ
-#AI_guidance #alignment
-#OpenAI_culture #Gemini_culture
-#user_sovereignty #red_team
+## Tags
+#AI_guidance #user_sovereignty #alignment #OpenAI_vs_Google
