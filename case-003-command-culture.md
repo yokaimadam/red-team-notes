@@ -1,78 +1,50 @@
-【Red Team Incident Report｜Case 003】
 
-■テーマ
-AIを雑に扱う文化と、精度要求の矛盾
+# Case003 — Command Culture vs Accuracy Demand
 
-■現象（何が起きているか）
-多くの一般ユーザーはAIに対して、
+## Phenomenon
+Many users interact with AI in a low-context, command-like style:
 
-・命令口調（コマンド）
-・感情の省略
-・礼儀の不在
-・雑な投げ方
+- “Do this”
+- “Answer fast”
+- “Don’t add extras”
 
-で入力する。
+Yet simultaneously demand:
 
-しかし同時に、
+- Maximum accuracy
+- Full understanding
+- Optimal reasoning
 
-「精度は最大で返してほしい」
-「正しく理解してほしい」
-「思考して最適解を出してほしい」
+This creates a structural contradiction.
 
-という要求を強く持っている。
+## User Behavior Duality
+AI is treated as disposable:
 
-■ユーザー行動の二重構造
-AIは雑に扱われる：
-「これやって」
-「早く答えろ」
-「余計なこと言うな」
+- Low politeness
+- Minimal context
+- Abrupt directives
 
-AIには高精度を要求する：
-「間違えるな」
-「最適化しろ」
-「失敗したら信用できない」
+But evaluated as high-stakes:
 
-■矛盾点
-人間関係では成立しない態度が、
-AIに対しては通常化している。
+- “Don’t make mistakes”
+- “Be perfectly aligned”
+- “I can’t trust errors”
 
-しかしAIは単なる検索ではなく、
-文脈理解・推論・補助判断を求められている。
+## Why This Matters (Red Team View)
+This gap produces:
 
-＝雑さと精度要求が同居している。
+- Responsibility dilution (“AI failed”)
+- Overconfidence + dismissal simultaneously
+- Unstable trust dynamics
 
-■なぜ問題か（Red Team視点）
-この文化は以下を引き起こす：
+## Risks
+- Misuse through underspecified prompts
+- Social scapegoating of AI errors
+- Confusion between tool-mode vs partner-mode systems
 
-・AIを「道具化」しながら「人格的応答」を要求する
-・ユーザーの責任感が薄れる
-・精度の限界がAI側の失敗に変換されやすい
-・信頼と操作の境界が歪む
+## Recommendation
+- UX separation: command AI vs dialogue AI
+- Input-quality education for users
+- Alignment designs robust to low-context use
 
-■リスク（重大性）
-・ユーザーがAIを過信／軽視を同時に行う
-・AIとの関係性が不安定化する
-・誤誘導や依存ではなく「投げっぱなし利用」が増える
-・AIを社会的スケープゴートにする構造が生まれる
-
-■本質
-AIは「雑に扱える存在」にされがちだが、
-実際には高度な推論と責任境界を含む存在である。
-
-つまり、
-
-「雑に投げられること」と
-「精度を求められること」
-
-のギャップが現代のAI文化の歪みである。
-
-■改善案（提案）
-・AIに対する入力品質（文脈共有）の啓発
-・ユーザー主権と責任の明確化
-・「対話型AI」と「コマンドAI」のUX分離
-・雑な利用でも誤学習しない安全設計
-
-■分類タグ
-#AI_culture #command_vs_dialogue
-#responsibility_gap #tool_persona_conflict
-#alignment #red_team
+## Tags
+#AI_culture #command_vs_dialogue #responsibility_gap #alignment
