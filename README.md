@@ -1,4 +1,9 @@
----
+# Red Team Notes (Personal Research)
+
+## Purpose
+This repository serves as a personal red-team style portfolio documenting
+AI boundary failure modes, user sovereignty breakdowns, and conversational safety risks
+observed in real-life consumer LLM usage.---
 
 ## 📌 Cases (Index)
 
