@@ -1,3 +1,8 @@
+このフォルダは child（発達・育児・支援運用） のケースログ置き場。
+AI/GPT系は GPT/（または AI/GPT/）へ。
+
+
+
 # Developmental / Neurodiversity Cases
 
 このディレクトリは、発達特性（ASD / ADHD / ギフテッド等）を持つ子どもに関する  
