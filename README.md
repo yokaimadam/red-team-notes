@@ -52,3 +52,5 @@ To contribute to applied AI red teaming, evaluation, and safety-oriented system 
 Disclaimer:
 
 This is an independent personal research archive, not an official report.
+
+License: CC BY 4.0 (or MIT)
