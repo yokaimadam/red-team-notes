@@ -56,3 +56,8 @@ Disclaimer:
 This is an independent personal research archive, not an official report.
 
 License: CC BY 4.0 (or MIT)
+
+## Status
+
+Raw cases are currently being collected via Slack and GitHub Issues.
+Structuring and formal classification will be performed after sufficient case accumulation.
