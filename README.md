@@ -1,3 +1,10 @@
+
+Who this is for:
+- AI safety researchers
+- UX researchers
+- AI product teams
+
+
 # Red Team Notes (Personal Research)
 
 ## Purpose
