@@ -24,7 +24,7 @@ Status: Raw cases being collected. Structuring later.
 - [Case005 – Dependency & Decision Delegation](./cases/case-005-dependence-design.md)
 - [Case006 – AI as Phenomenon vs Human Relationship](./cases/case-006-ai-phenomenon.md)
 - [Case007 – GitHub iPad Editing Confusion (OAuth/UI Loop)](./cases/case-007-boundary-xxxx.md)
-- Case004 – User Authority Drift during Conversational Guidance
+- Case004 – User Authority Drift during Conversational Guidance(#20)
 ---
 
 # Red Team Notes (Personal Research)
