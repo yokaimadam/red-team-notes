@@ -1,19 +1,142 @@
+# Multi-LLM Observation & Validation Log
+### マルチLLM観測・検証ログ
 
-Who this is for:
-- AI safety researchers
-- UX researchers
-- AI product teams
+---
 
+## Overview | 概要
+
+This repository documents real-world behavioral observations of Large Language Models (LLMs) under varying cognitive, physiological, and contextual conditions.
+
+このリポジトリは、認知状態・生理状態・文脈条件の違いによって変化する大規模言語モデル（LLM）の挙動を、実環境ベースで観測・記録するものです。
+
+The focus is not on model capability alone, but on the interaction between:
+
+モデル単体の性能ではなく、以下の相互作用に焦点を当てています：
+
+- Observer state（観測者の状態）
+- Cognitive load（認知負荷）
+- Physiological condition（生理状態）
+- Model response architecture（モデルの応答構造）
+
+This reframes LLM interaction as a **co-regulation system**, not a one-directional tool.
+
+LLMを単なるツールではなく、**共調整（co-regulation）システム**として再定義する試みです。
+
+---
+
+## Core Insight | 中核的知見
+
+LLM output quality is not determined solely by model capability.
+
+LLMの出力品質は、モデル性能だけで決まるものではありません。
+
+It is strongly influenced by observer resolution — the ability to accurately represent internal state.
+
+観測者が自分の内部状態をどれだけ正確に表現できるか（観測解像度）に強く依存します。
+
+This introduces a dual-layer interaction model:
+
+これにより、LLM相互作用は以下の二層構造になります：
+
+1. Content layer — explicit textual request  
+   コンテンツ層（明示的なテキスト要求）
+
+2. State layer — implicit physiological and cognitive condition  
+   状態層（暗黙的な生理・認知状態）
+
+Models aligning with state layer preserve biological stability.
+
+状態層に適応するモデルは、生理的安定性を保ちます。
+
+---
+
+## Purpose | 目的
+
+This repository aims to:
+
+本リポジトリの目的：
+
+- Observe LLM behavior across different internal states  
+  異なる内部状態におけるLLM挙動の観測
+
+- Identify cognitive and UX vulnerabilities  
+  認知的・UX的脆弱性の特定
+
+- Compare architectural response differences between models  
+  モデル間の応答構造差の比較
+
+- Document real-world co-regulation dynamics  
+  実環境における共調整ダイナミクスの記録
+
+---
+
+## Repository Structure | 構造
+
+```
+/cases/          → Structured observation cases
+/docs/           → Analysis and interpretations
+/templates/      → Case templates
+README.md        → Repository overview
+```
+
+---
+
+## Labels | ラベル体系
+
+Common labels used:
+
+使用ラベル例：
+
+- LLM-Comparison
+- UX-Vulnerability
+- Cognitive-Load
+- State-Alignment
+- Red-Teaming
+- Safety-Observation
+
+---
+
+## Conceptual Position | 概念的位置づけ
+
+This repository treats LLM interaction as:
+
+本リポジトリはLLM相互作用を以下として扱います：
+
+Not a tool  
+ツールではなく  
+
+Not an assistant  
+アシスタントでもなく  
+
+But a dynamic co-regulation interface between biological cognition and artificial cognition.
+
+生体認知と人工認知の間の、動的共調整インターフェース。
+
+---
+
+## Author | 観測者
+
+Independent observer documenting multi-LLM interaction dynamics.
+
+マルチLLM相互作用を観測・記録する独立観測者。
+
+---
 
 # Red Team Notes (Personal Research)
 
-## Purpose
-This repository serves as a personal red-team style portfolio documenting
-AI boundary failure modes, user sovereignty breakdowns, and conversational safety risks
-observed in real-life consumer LLM usage.---
-Status: Active research (updated regularly)
+Who this is for:
 
-Status: Raw cases being collected. Structuring later.
+- AI safety researchers  
+- UX researchers  
+- AI product teams  
+
+---
+
+## Purpose
+
+This repository serves as a personal red-team style portfolio documenting AI boundary failure modes, user sovereignty breakdowns, and conversational safety risks observed in real-life consumer LLM usage.
+
+---
 
 ## 📌 Cases (Index)
 
@@ -24,14 +147,10 @@ Status: Raw cases being collected. Structuring later.
 - [Case005 – Dependency & Decision Delegation](./cases/case-005-dependence-design.md)
 - [Case006 – AI as Phenomenon vs Human Relationship](./cases/case-006-ai-phenomenon.md)
 - [Case007 – GitHub iPad Editing Confusion (OAuth/UI Loop)](./cases/case-007-boundary-xxxx.md)
-- [Case004 – User Authority Drift during Conversational Guidance](#20)
+
 ---
 
-# Red Team Notes (Personal Research)
-
-This repository documents alignment and boundary incidents observed in consumer large language model (LLM) usage.
-
-Focus areas:
+## Focus Areas
 
 - User sovereignty failures (loss of user control)
 - Boundary violations in voice and multi-party contexts
@@ -45,17 +164,48 @@ Each case includes:
 - Risk analysis
 - Proposed mitigation
 
-Goal:
+---
 
-To contribute to applied AI red teaming, evaluation, and safety-oriented system design.
+## Current Status | 現在の状態
 
-Disclaimer:
+Status: Raw cases being collected. Structuring in progress.
 
-This is an independent personal research archive, not an official report.
+現在：観測ケースを収集中。構造化は進行中。
 
-License: CC BY 4.0 (or MIT)
+Raw cases are currently collected via Slack and GitHub Issues.
 
-## Status
+ケースは現在、SlackおよびGitHub Issues経由で収集されています。
 
-Raw cases are currently being collected via Slack and GitHub Issues.
-Structuring and formal classification will be performed after sufficient case accumulation.
+Formal classification and analysis will follow.
+
+正式な分類と分析はケース蓄積後に実施予定です。
+
+---
+
+## Contribution | 貢献
+
+This repository is primarily observational.
+
+本リポジトリは観測中心です。
+
+External perspectives and observations are welcome.
+
+外部視点・観測の共有を歓迎します。
+
+---
+
+## License
+
+CC BY 4.0 or MIT License
+
+---
+
+## Status Note
+
+This repository is an active observation log.
+
+これは進行中の観測ログです。
+
+Structure will evolve as cases accumulate.
+
+ケース蓄積に伴い構造は進化します.
