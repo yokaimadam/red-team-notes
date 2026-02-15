@@ -11,6 +11,7 @@ Who this is for:
 This repository serves as a personal red-team style portfolio documenting
 AI boundary failure modes, user sovereignty breakdowns, and conversational safety risks
 observed in real-life consumer LLM usage.---
+Status: Active research (updated regularly)
 
 ## 📌 Cases (Index)
 
