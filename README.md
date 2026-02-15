@@ -27,6 +27,7 @@ Status: Raw cases being collected. Structuring later.
 ## Cases Index
 - case-2026-02-03-anxiety-wave.md
 - case-child-signals-green-vs-red.md
+- Case004 – User Authority Drift during Conversational Guidance
 ---
 
 # Red Team Notes (Personal Research)
