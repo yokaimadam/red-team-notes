@@ -13,6 +13,8 @@ AI boundary failure modes, user sovereignty breakdowns, and conversational safet
 observed in real-life consumer LLM usage.---
 Status: Active research (updated regularly)
 
+Status: Raw cases being collected. Structuring later.
+
 ## 📌 Cases (Index)
 
 - [Case001 – Boundary Violation via Premature Cut](./cases/case-001-boundary-cut.md)
