@@ -1,5 +1,4 @@
-　# Case 009 — Google Link Observation
-# ケース009 — Googleリンク挙動観測
+# Case 009 — Google Link Observation
 # Case009 – Google Link Handling & Capability Boundary Observation
 # ケース009 – Google連携処理と能力境界の観測
 
