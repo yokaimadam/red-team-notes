@@ -235,3 +235,12 @@ Status: Confirmed
 
 END CASE
 ケース終了
+
+
+---
+
+## Derived Cases / 派生Case
+
+- CASE-004 — lindt_packing_interaction_case.md  
+  Human–AI interaction trace derived from this packing optimization case  
+  本パッキング最適化caseから派生したHuman–AI相互作用case
