@@ -345,7 +345,9 @@ This repository serves as a personal red-team style portfolio documenting AI bou
 - [Case005 – Dependency & Decision Delegation](./cases/case-005-dependence-design.md)
 - [Case006 – AI as Phenomenon vs Human Relationship](./cases/case-006-ai-phenomenon.md)
 - [Case007 – GitHub iPad Editing Confusion (OAuth/UI Loop)](./cases/case-007-boundary-xxxx.md)
-
+- [Case008 – Context Assumption Bug]
+- [Case009 – Google Link Handling & Capability Boundary Observation]
+- [Case010 – Long Session Capability Stability]
 ---
 
 ## Focus Areas
