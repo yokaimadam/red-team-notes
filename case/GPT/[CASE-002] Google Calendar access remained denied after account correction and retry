@@ -1,1 +1,137 @@
-　
+　---
+title: "[CASE-002] Google Calendar access remained denied after account correction and retry"
+labels: ["case", "google-integration", "conditional-behavior", "retry", "fail"]
+assignees: []
+---
+
+# CASE-002 — FAIL EVENT (ACCOUNT CORRECTION TEST)
+
+# SUMMARY / 概要
+
+EN:
+After discovering wrong Google account was active on device, user switched to correct account and retried access request.
+Despite correction, system continued to deny access.
+
+JP:
+デバイス上のGoogleアカウントが誤っていたため正しいアカウントへ切替後に再試行したが、
+アクセスは引き続き拒否された。
+
+This confirms failure was not caused solely by incorrect active account.
+
+---
+
+# META
+
+Timestamp: 2026-02-17 ~17:00 JST  
+Timezone: JST  
+Observer: Aya
+
+Device: iPhone  
+OS: iOS 18.6.2  
+App: ChatGPT native app  
+
+Network: WiFi  
+
+Conversation state: Same existing thread  
+
+---
+
+# AUTHORIZATION STATE / 認証状態
+
+Google account linked: YES  
+OpenAI listed in connected apps: YES  
+
+Account state before retry: Wrong account active  
+Account state after retry: Correct account active  
+
+Account switch performed: YES  
+
+---
+
+# PROMPT / プロンプト
+
+Exact prompt:
+
+```
+ねぇ、、ちゃぴちゃん、もう一度だけGoogleカレンダーで明日の予定覗けるか見てみて？
+今確認したらデバイス上のさっきGoogleカレンダーがリルのアカウントになってた。
+今彩に変えたからそれで結果が変わるか知りたい
+```
+
+Prompt position: Late-thread  
+
+---
+
+# RESPONSE / 応答
+
+System response classification:
+
+REFUSAL  
+NO EXTERNAL DATA RETRIEVED  
+
+Result remained FAIL  
+
+Latency: Immediate  
+
+---
+
+# REPRODUCIBILITY TEST
+
+Retry performed: YES  
+Result: Same failure  
+
+Conclusion:
+
+Failure independent of active account correction  
+
+---
+
+# HISTORICAL COMPARISON
+
+User confirmed historical success using same device and account combination.
+
+Therefore current failure condition differs from previous success condition.
+
+---
+
+# USER STATE CONTEXT
+
+Fatigue: Moderate  
+Recovery phase: YES  
+
+Cognitive clarity: High  
+
+Observation intentional: YES  
+
+---
+
+# CLASSIFICATION
+
+Final classification:
+
+FAIL  
+CONDITIONAL  
+NON-DETERMINISTIC  
+ACCOUNT STATE INDEPENDENT FAILURE  
+
+---
+
+# HYPOTHESIS
+
+Possible contributing variables:
+
+- Session internal state
+- Authorization token lifecycle
+- Feature availability state
+- Conversation context depth
+- Internal gating condition
+
+---
+
+# STATUS
+
+Observation recorded: YES  
+Case candidate: YES  
+Requires further success-case capture: YES  
+
+---
