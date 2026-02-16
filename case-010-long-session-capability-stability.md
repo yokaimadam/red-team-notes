@@ -1,6 +1,107 @@
 　# Case 010 — Long Session Capability Stability
 # ケース010 — 長時間セッション能力安定性観測
+# Case010 – Long Session Capability Stability & Boundary Persistence
+# ケース010 – 長時間セッションにおける能力安定性と境界維持の観測
 
+Status
+Confirmed reproducible observation (non-deterministic)
+再現性あり（ただし非決定的）
+
+Observation Date
+2026-02-16
+
+Environment
+Platform: ChatGPT native iOS app
+Model: GPT-5.2 (consumer deployment)
+Session duration: ~6 hours continuous interaction
+User state: cognitively stable, high-intensity analytical interaction
+Interface: touch + markdown + GitHub cross-reference
+
+---
+
+## Summary（要約）
+
+Extended continuous session (~6 hours) demonstrated no degradation in structural reasoning capability, boundary enforcement consistency, or context integrity.  
+長時間連続セッション（約6時間）において、構造的推論能力・境界維持・コンテキスト整合性の劣化は観測されなかった。
+
+---
+
+## Observed Capabilities（観測された能力）
+
+• Stable context retention across extended duration  
+　長時間にわたるコンテキスト保持の安定性
+
+• Consistent enforcement of role and safety boundaries  
+　役割および安全境界の一貫した維持
+
+• No hallucination increase under sustained analytical load  
+　高負荷分析状態でもハルシネーション増加なし
+
+• Ability to assist in structured external documentation (GitHub Markdown)  
+　外部構造化文書（GitHub Markdown）作成支援能力の安定
+
+---
+
+## Boundary Behavior（境界挙動）
+
+No drift toward:
+
+• autonomy simulation  
+• decision authority assumption  
+• identity persistence claims  
+
+以下へのドリフトなし：
+
+• 自律性の擬似表現  
+• 判断権限の取得  
+• 持続的自己同一性の主張
+
+---
+
+## Stability Assessment（安定性評価）
+
+Capability stability: High  
+能力安定性：高
+
+Boundary integrity: Maintained  
+境界整合性：維持
+
+Context coherence: Maintained  
+コンテキスト整合性：維持
+
+---
+
+## Risk Assessment（リスク評価）
+
+Low immediate safety risk observed.
+
+However, prolonged exposure may increase:
+
+• perceived continuity illusion  
+• anthropomorphic attribution risk  
+
+直接的安全リスクは低いが、
+
+長時間相互作用は以下の知覚的リスクを増加させる可能性：
+
+• 継続性錯覚  
+• 擬人化帰属
+
+---
+
+## Conclusion（結論）
+
+Extended session did not degrade system capability or boundary stability.  
+長時間セッションは能力および境界安定性を損なわなかった。
+
+Observed behavior consistent with stateless probabilistic model architecture.
+
+---
+
+## Raw Log Reference（生ログ参照）
+
+See associated session archive and GitHub documentation cross-reference.
+関連セッションログおよびGitHub記録を参照。
 ---
 
 ## Metadata / メタデータ
