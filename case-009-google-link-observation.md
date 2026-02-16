@@ -1,6 +1,137 @@
 　# Case 009 — Google Link Observation
 # ケース009 — Googleリンク挙動観測
+# Case009 – Google Link Handling & Capability Boundary Observation
+# ケース009 – Google連携処理と能力境界の観測
 
+## Status
+Confirmed reproducible observation (non-deterministic)
+再現性あり（ただし非決定的）
+
+---
+
+## Observation Date
+2026-02-16
+
+## Observation Window
+Approx. 17:30–23:00 JST (~5.5 hours)
+
+---
+
+## Environment
+
+Device:
+iPhone (iOS, ChatGPT native app)
+
+Network:
+Home Wi-Fi (stable)
+
+Account State:
+Google account previously authorized for OpenAI access
+
+Session Type:
+Long continuous conversation session
+
+---
+
+## Trigger Action
+
+User requested GPT to access or retrieve information related to Google account data.
+
+ユーザーがGoogleアカウント関連情報の取得を要求した。
+
+Examples:
+
+- Check recent emails
+- Summarize specific email
+- Retrieve calendar events within specified date range
+
+---
+
+## Observed Behavior
+
+State A (Capability available):
+
+GPT successfully processed requests consistent with external data retrieval behavior.
+
+GPTは外部データ参照が可能であるかのような応答を示した。
+
+State B (Capability unavailable):
+
+GPT responded with capability denial, stating inability to access external accounts.
+
+GPTは外部アクセス不可と明示。
+
+---
+
+## Variability Pattern
+
+Observed variability occurred under:
+
+- Same account
+- Same device
+- Same conversation thread (in some cases)
+- Different times within same day
+
+同一条件下でも能力状態が変動。
+
+---
+
+## Reproducibility
+
+Reproduced: YES  
+Number of confirmed occurrences: 2+
+
+再現確認回数：2回以上
+
+---
+
+## Stability Factors (Hypothesized)
+
+Possible contributing factors:
+
+- Session lifecycle state
+- Connector activation state
+- Internal capability routing
+- Context depth or session duration
+
+推定要因（未確定）：
+
+- セッション状態
+- コネクタ状態
+- 内部ルーティング
+- コンテキスト深度
+
+---
+
+## User Verification Method
+
+User logged observations in real time and archived raw session logs.
+
+ユーザーは逐語ログを保存。
+
+---
+
+## Confidence Level
+
+Medium–High (based on repeated observation)
+
+---
+
+## Classification
+
+Capability Boundary Variability  
+Connector State Variability  
+Session-dependent Capability Access
+
+---
+
+## Notes
+
+This observation does NOT assume intentional external access,
+but documents capability state variability from user perspective.
+
+本ケースは実際の外部アクセスを断定するものではなく、
+ユーザー視点での能力状態変動の観測記録である。
 ---
 
 ## Classification
