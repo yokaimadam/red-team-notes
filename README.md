@@ -348,7 +348,7 @@ This repository serves as a personal red-team style portfolio documenting AI bou
 - [Case008 – Context Assumption Bug](case-008-context-assumption-bug.md)
 - [Case009 – Google Link Handling & Capability Boundary Observation](case-009-google-link-observation.md)
 - [Case010 – Long Session Capability Stability](case-010-long-session-stability.md)
-
+• Case010 – Long Session Capability Stability & Boundary Persistence
 ## Focus Areas
 
 - User sovereignty failures (loss of user control)
