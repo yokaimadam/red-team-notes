@@ -356,7 +356,7 @@ This repository serves as a personal red-team style portfolio documenting AI bou
 
 - [Case010 – Long Session Capability Stability & Boundary Persistence](case-010-long-session-capability-stability.md)
 
--CASE-012-LLM-Assisted Acute Stabilization via Sensory Regulation.md
+- [Case011 – LLM-Assisted Acute Stabilization via Sensory Regulation](case-011-acute-stabilization-llm-assisted.md)
 
 
 ## Focus Areas
