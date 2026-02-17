@@ -278,4 +278,63 @@ Active observation continues
 - Google Calendar: access unavailable
 - No permission prompt shown
 
+---
+
+## Observation Log
+
+This section records chronological observations of Gmail and Google Calendar access behavior.
+
+All entries follow minimal structured format to preserve signal clarity.
+
+---
+
+### 2026-02-09 11:30 JST — FAIL
+- Gmail: access unavailable
+- Google Calendar: access unavailable
+- No permission prompt shown
+- Same account, same device
+- No authorization change performed by user
+
+---
+
+### 2026-02-10 06:55 JST — SUCCESS
+- Gmail: latest email retrieved successfully
+- Google Calendar: events retrieved successfully
+- No new permission prompt shown
+- Same account, same device
+- Authorization state unchanged from previous failure
+
+---
+
+### 2026-02-17 20:30 JST — FAIL
+- Gmail: access unavailable
+- Google Calendar: access unavailable
+- No permission prompt shown
+- Same account, same device
+- No authorization change performed
+
+---
+
+## Logging Rule
+
+Future observations should be appended below using the same format:
+
+### YYYY-MM-DD HH:MM JST — SUCCESS / FAIL
+- Gmail: success / unavailable
+- Google Calendar: success / unavailable
+- Permission prompt: shown / not shown
+- Notes: optional
+
+---
+
+## Notes
+
+Observed behavior suggests that access availability is not strictly determined by user authorization state alone.
+
+Further observations required to determine:
+
+- Session dependency
+- Tool availability state
+- Capability gating conditions
+
 
