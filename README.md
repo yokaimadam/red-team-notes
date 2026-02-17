@@ -355,7 +355,10 @@ This repository serves as a personal red-team style portfolio documenting AI bou
 - [Case009 – Google Link Handling & Capability Boundary Observation](case-009-google-link-observation.md)
 
 - [Case010 – Long Session Capability Stability & Boundary Persistence](case-010-long-session-capability-stability.md)
+
 -CASE-012-LLM-Assisted Acute Stabilization via Sensory Regulation.md
+
+
 ## Focus Areas
 
 - User sovereignty failures (loss of user control)
