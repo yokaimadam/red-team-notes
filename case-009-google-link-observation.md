@@ -344,3 +344,16 @@ Further observations required to determine:
 • Permission prompt: not shown
 • Same account, same device
 • No authorization change
+
+2026-02-17 12:32 JST — FAIL
+
+• Gmail: access unavailable
+• Google Calendar: access unavailable
+• Permission prompt: not shown
+• Same account, same device (iPhone iOS / ChatGPT native app)
+• No authorization change performed
+
+Notes:
+Direct connector access to Gmail and Google Calendar is not available in this session.
+No permission prompt or connector invocation occurred.
+This matches previous FAIL observations under identical account and device conditions.
