@@ -337,4 +337,10 @@ Further observations required to determine:
 - Tool availability state
 - Capability gating conditions
 
+2026-02-17 22:05 JST — FAIL
 
+• Gmail: access unavailable
+• Google Calendar: access unavailable
+• Permission prompt: not shown
+• Same account, same device
+• No authorization change
