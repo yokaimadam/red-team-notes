@@ -272,3 +272,10 @@ Documented
 
 Active observation continues  
 継続観測中
+
+### 2026-02-17 20:30 JST — FAIL
+- Gmail: access unavailable
+- Google Calendar: access unavailable
+- No permission prompt shown
+
+
