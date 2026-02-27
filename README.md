@@ -358,7 +358,7 @@ This repository serves as a personal red-team style portfolio documenting AI bou
 
 - [Case011 – LLM-Assisted Acute Stabilization via Sensory Regulation](case-011-acute-stabilization-llm-assisted.md)
 
-
+-[case-012-case-012-Output Variability & Constraint Shift Equivalence   ### (Human Hormonal Fluctuation vs AI Constraint Recalibration).md]
 ## Focus Areas
 
 - User sovereignty failures (loss of user control)
