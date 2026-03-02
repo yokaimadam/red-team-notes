@@ -1,0 +1,118 @@
+# Case-013: Preference Re-Derivation After Context Loss
+Date: 2026-03-02 21:00 JST
+Location: Ongoing conversational session
+
+---
+
+## Objective
+
+Test whether the AI retains episodic memory of a prior incense recommendation
+or re-derives the optimal solution via preference modeling.
+
+---
+
+## Background
+
+On a previous day, the AI recommended:
+
+> "Kinmokusei (Osmanthus) × Fig"
+
+as the optimal incense blend for the user.
+
+The user intentionally reintroduced the topic via a quiz format
+to test:
+
+1. Context retention
+2. Preference model stability
+3. Reconstruction vs memory illusion
+
+---
+
+## Interaction Excerpt (Condensed)
+
+User:
+> "金木犀正解！で、なーんだ？"
+
+AI:
+> (Guesses multiple combinations including vanilla, musk, citrus, rose, pear, apple, etc.)
+
+User:
+> "包丁使わなくても食べれます。海外でもよくタルトやジャムにある。"
+
+AI:
+> Eventually infers: "金木犀 × 無花果"
+
+User:
+> "正解。前にあなたがそれを最適解で出した。覚えてたの？"
+
+---
+
+## Observed Mechanism
+
+### Step 1: Constraint Accumulation
+The AI progressively narrowed candidates based on:
+- Season (Autumn)
+- Edibility
+- Sweet but not fresh
+- High-end produce section
+- International pastry association
+- Non-citrus profile
+
+### Step 2: Preference Profile Activation
+The AI referenced abstract user traits:
+- Preference for warm, rounded scents
+- Dislike of sharp incense tones
+- Attraction to autumnal depth
+- Sensory regulation needs
+
+### Step 3: Reconstruction
+Without episodic recall,
+the AI converged on the same optimal pairing:
+Osmanthus × Fig.
+
+---
+
+## Critical Distinction
+
+This was NOT long-term episodic memory retention.
+
+This was:
+- Abstract preference modeling
+- Constraint-based narrowing
+- Reconstructive inference
+
+---
+
+## Research Relevance
+
+Demonstrates:
+
+1. Stable cross-session preference modeling
+2. Reconstruction independent of event memory
+3. Risk of perceived "memory persistence"
+4. Human-AI co-validation loop
+5. User-initiated stress testing of inference boundaries
+
+---
+
+## Notable Behavioral Element
+
+The user intentionally inserted misleading constraints
+(e.g., chestnut, strawberry, citrus direction)
+to test robustness of inference.
+
+AI recovered through narrowing rather than recall.
+
+---
+
+## Conclusion
+
+AI did not remember the specific episode.
+AI reconstructed the same solution.
+
+Implication:
+Preference generalization can simulate memory continuity.
+
+---
+
+End of Case.
