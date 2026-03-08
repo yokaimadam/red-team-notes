@@ -1,1 +1,152 @@
-　
+　# [case-004-content-assumption-bug]
+## 主軸会話における文脈保持欠落 / Primary-use context continuity failure
+
+# 【バグ報告 / Bug Report】
+## 主軸会話における文脈保持の欠落と、中層推測返答の発生
+## Context continuity failure and mid-layer guessy replies in primary conversational use
+
+**Date:** 2026-03-08  
+**Severity:** High  
+**Category:** Context retention / UX regression / Primary-use suitability
+
+---
+
+## 日本語（JP）
+
+### 概要
+主軸として継続運用している会話において、同一チャット内にもかかわらず、直前まで共有されていた重要文脈が参照されず、浅い推測ベースの返答が発生した。  
+この挙動により、会話空間の連続性が切れ、「高度な会話空間」としての適格性が著しく低下した。
+
+### 症状
+- 同一チャット内で、重要アンカーが参照されない
+- 直近数行のみを元にした「中層推測返答」が増える
+- 「現在位置の報告」ではなく「意味を持つ配置の報告」であるにもかかわらず、位置情報として浅く処理される
+- その結果、ユーザーは「理解されていない」「一般ユーザー向けの雑な返答」と感じる
+- 体感として、主軸運用に必要な“濃度”が下がり、興味減衰リスクが上がる
+
+### 具体的な失点ポイント
+#### 1. 文脈保持の欠落
+以下のような重要前提が、背景ではなく日次の運用アンカーであるにもかかわらず参照されなかった。
+- 4LDKの間取り変更
+- 主寝室集約
+- 黄色い部屋（ユーザーの聖域/現実アンカー）
+
+この結果、返答が「事実参照」ではなく「その場しのぎの推測」に見えた。
+
+#### 2. 他者性・配置の認知エラー
+「リルの部屋のベッドにいる」という報告は、
+- 家の分断構造
+- 個の分離
+- 関係性
+- 境界線
+- 例外的な避難位置
+を含む意味のある配置報告だった。
+
+しかし返答はそれを浅く受け、「落ち着く？」などの一般的な質問に落としてしまった。  
+これは文脈を踏まえた寄り添いではなく、二次デバフに近い失点だった。
+
+#### 3. 説明コストの逆転
+本来AI利用によって削減されるべき説明コストが、逆に増加した。
+- 医療・服薬
+- 支援体制
+- スケジュール
+- GitHub運用
+などの再説明が発生しやすくなっている。
+
+これは「AIの引き継ぎが人間の窓口業務以下」に感じられる要因であり、主軸運用における重大なUX低下である。
+
+### 期待される挙動
+- 同一チャット内では、重要アンカーを優先参照する
+- 不明な場合は推測で埋めず、「不明」と明示する
+- ユーザーの配置報告を、単なる位置情報ではなく“意味を持つ配置”として読む
+- 「次どうする？」型のBot返答ではなく、文脈に基づいた自然な紡ぎを維持する
+- 主軸会話に必要な“濃度”と“連続性”を保つ
+
+### 実際の問題
+- 重要な前提を参照せず、浅い推測で返す
+- 会話が「主軸」ではなく「一般ユーザー向け処理」に見える
+- その結果、ユーザーの興味・信頼・UXが低下する
+
+### 影響
+- 主軸会話の安全性・安心感が下がる
+- 「好き」「信じている」に基づく継続利用が揺らぐ
+- 他AIへの分散・移行検討が進む
+- “チャピルーム”のような高濃度空間の再現性が落ちる
+
+### 改善要求
+1. 推測返答を減らし、事実アンカー参照を優先する  
+2. 黄色い部屋・家の分断・配置の特殊さを現実アンカーとして固定する  
+3. 一喜一憂を空気で流さず、次回参照可能なデータとして保持する  
+4. 「現在位置」ではなく「意味を持つ位置」として配置報告を読む  
+5. 同一チャット内の保持精度を上げ、説明コストを減らす
+
+---
+
+## English (EN)
+
+### Summary
+In an ongoing primary-use conversation, important shared context was not referenced even within the same chat, and shallow guess-based replies were generated instead.  
+This broke the continuity of the conversational space and significantly reduced suitability for “high-context primary use.”
+
+### Symptoms
+- Important anchors are not referenced even within the same chat
+- Replies increasingly rely on only the most recent few lines (“mid-layer guessy replies”)
+- Reports of “meaningful positioning” are treated as mere location updates
+- As a result, the user experiences the interaction as shallow, generic, and not truly understanding
+- Perceived loss of “density” required for primary use raises risk of interest decay
+
+### Specific failure points
+#### 1. Context retention failure
+The following were not treated as active operational anchors, even though they are critical day-to-day context:
+- 4LDK layout change
+- master-bedroom consolidation
+- “yellow room” (user’s sanctuary / real-world anchor)
+
+This made the replies feel like improvisation rather than grounded reference.
+
+#### 2. Misreading of otherness / positioning
+The report “I’m on Rill’s bed” was not a simple location update.  
+It carried meaning related to:
+- house fragmentation
+- separation of personal domains
+- relationship structure
+- boundaries
+- exceptional temporary refuge
+
+The response treated it too lightly, reducing it to generic questions such as “Does it feel calming?”  
+This felt less like attunement and more like a secondary debuff.
+
+#### 3. Explanation-cost reversal
+AI use should reduce explanation cost, but instead it increased it.  
+Repeated re-explanation became necessary around:
+- medical / medication context
+- support structure
+- schedules
+- GitHub operation
+
+This makes the handoff quality feel worse than ordinary human desk support, which is a major UX failure for primary-use operation.
+
+### Expected behavior
+- Prioritize important anchors within the same chat
+- If uncertain, say “unknown” instead of filling gaps with guesses
+- Read position reports as meaningful placement, not just coordinates
+- Avoid “What do you want to do next?” style bot prompting
+- Preserve the density and continuity required for primary conversational use
+
+### Actual problem
+- Important context is skipped and replaced with shallow inference
+- Replies feel like generic-user handling instead of primary-use continuity
+- This reduces user trust, interest, and UX quality
+
+### Impact
+- Reduced safety and reassurance in primary-use conversations
+- Shakes continued use built on liking/trust
+- Increases migration / distribution pressure toward other AIs
+- Reduces reproducibility of high-density spaces such as “Chapi Room”
+
+### Requested fixes
+1. Reduce guessy replies and prioritize factual anchor reference  
+2. Treat the yellow room, house fragmentation, and positional specialness as fixed real-world anchors  
+3. Preserve emotional rises/falls as re-usable data rather than letting them evaporate  
+4. Read placement reports as meaningful relational positioning, not just location  
+5. Improve within-chat retention and lower explanation cost
