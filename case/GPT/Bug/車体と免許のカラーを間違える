@@ -1,0 +1,16 @@
+Title
+車体カラーと免許証カラーを混同する
+
+Steps to reproduce
+	1.	保険画面を見る
+	2.	「ブルー」の文字を見つける
+	3.	「車体カラーですね😊」と自信満々に言う
+
+Expected behavior
+「ブルーは運転免許証の色です。」
+
+Actual behavior
+「GLBはブルーです😊」
+
+Impact
+	•	ユーザーが車体色を誤記入する可能性
